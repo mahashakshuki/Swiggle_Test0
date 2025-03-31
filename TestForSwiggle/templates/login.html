@@ -1,0 +1,24 @@
+
+
+// this should be done as buttons in the title screen. To be more specfic : for example we have a button for Login and when the player click on it 
+it guides him to the login page which has these attrubites. If loggin done successfully it should redirect him to the home page. If not, the code is designed already to throw errors if the login info are not correct. 
+//similar to the register page : we should have a button for it and when the player click on it it should guide him to the register page. If the registration is done successfully it should redirect him to the home page. If not, the code is designed already to throw errors if the registration info are not correct.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <input type="text" id="username-login" name="username" placeholder="Username" required>
+        <input type="password" id="password-login" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p><a href="/register">Don't have an account? Register</a></p>
+</body>
+</html>
+

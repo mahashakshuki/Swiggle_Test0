@@ -1,0 +1,27 @@
+
+
+// this is as a demo for the title page beacasue i couldnt do this in it directly. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Swiggle </h1>
+    
+    <!-- Display flash messages here -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    
+    <a href="/register">Register</a> | <a href="/login">Login</a>
+</body>
+</html>

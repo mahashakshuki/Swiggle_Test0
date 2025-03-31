@@ -1,0 +1,33 @@
+
+
+
+
+
+//signup.html. its done in html so maybe we need to change it to p5.js. ? //
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+
+    <!-- Display error message if user already exists -->
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <!-- Register Form -->
+    <form method="POST" action="/register">
+        <input type="text" id="username-register" name="username" placeholder="Username" required>
+        <input type="password" id="password-register" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+    <p><a href="/login">Already have an account? Login</a></p>
+</body>
+</html>
+
